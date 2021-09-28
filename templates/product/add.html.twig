@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+    <div class="col-6 d-flex justify-content-center">
+            {{ form_start(productForm) }}
+                <h1 class="h3 mb-3 font-weight-normal">Add new product form</h1>
+                {{ form_row(productForm.name) }}
+                {{ form_row(productForm.price) }}
+                {{ form_row(productForm.description) }}
+                {{ form_row(productForm.picture) }}
+                {{ form_row(productForm.available) }}
+                {{ form_row(productForm.submit) }}
+            {{ form_end(productForm) }}
+    </div>
+{% endblock %}
